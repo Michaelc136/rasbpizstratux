@@ -402,17 +402,6 @@ export CGO_LDFLAGS=-L/usr/local/lib
 make all
 make install
 
-#### minimal sanity checks
-if [ ! -f "/usr/bin/gen_gdl90" ]; then
-    echo "${BOLD}${RED}ERROR - gen_gdl90 file missing, exiting...${WHITE}${NORMAL}"
-    exit
-fi
-
-if [ ! -f "/usr/bin/dump1090" ]; then
-    echo "${BOLD}${RED}ERROR - dump1090 file missing, exiting...${WHITE}${NORMAL}"
-    exit
-fi
-
 echo "${GREEN}...done${WHITE}"
 
 
